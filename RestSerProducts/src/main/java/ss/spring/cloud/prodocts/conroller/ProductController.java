@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin //позволяет сюда стучаться с других серваков
 //@RequestMapping ("/api/v1/products") zuul итак редиректит на этот адрес
 public class ProductController {
     private final ProductService productService;
